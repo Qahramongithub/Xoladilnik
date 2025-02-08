@@ -12,6 +12,7 @@ class Category(models.Model):
 class SubCategory(models.Model):
     name = models.CharField(max_length=100)
     category = models.ForeignKey('apps.Category', on_delete=models.CASCADE)
+    # TODO
 
     def __str__(self):
         return self.name
